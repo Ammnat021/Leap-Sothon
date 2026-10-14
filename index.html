@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leap Sothon – IT Supervisor, Phnom Penh</title>
+<meta name="description" content="Leap Sothon: IT Supervisor with 9+ years running servers, networks, telephony and in-house systems in Phnom Penh, Cambodia.">
+<meta property="og:title" content="Leap Sothon – IT Supervisor">
+<meta property="og:description" content="Servers, networks, telephony and in-house systems, kept running since 2017.">
+<meta property="og:image" content="assets/photo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23245fa8'/><text x='50' y='68' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>LS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6fa; --panel:#ffffff; --ink:#14202e; --muted:#566478; --line:#d7dfea;
+  --blue:#245fa8; --blue-d:#173f73; --ok:#1f9d55; --side:#173f73; --side-ink:#eaf1fb;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0e1621; --panel:#152131; --ink:#e7edf5; --muted:#9aa9bd; --line:#26364b; --blue:#6aa5ea; --blue-d:#8fbcf3; --side:#0a111a; --side-ink:#e7edf5}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+
+.layout{display:grid;grid-template-columns:320px 1fr;min-height:100vh}
+aside{background:var(--side);color:var(--side-ink);padding:40px 32px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:20px;overflow:auto}
+aside img{width:100%;max-width:220px;aspect-ratio:1;object-fit:cover;object-position:50% 20%;border-radius:50%;border:4px solid rgba(255,255,255,.25)}
+aside h1{font-size:2rem;font-weight:800}
+aside .role{margin:0;opacity:.85}
+aside nav{display:flex;flex-direction:column;gap:2px;margin-top:8px}
+aside nav a{color:inherit;text-decoration:none;padding:6px 0;opacity:.8;border-left:3px solid transparent;padding-left:12px}
+aside nav a:hover,aside nav a.on{opacity:1;border-color:#8fbcf3}
+aside .contact{margin-top:auto;font-size:.95rem;display:grid;gap:4px}
+aside .contact a{color:inherit}
+
+main{padding:56px clamp(20px,5vw,72px) 80px;max-width:980px}
+section{margin-bottom:64px;scroll-margin-top:24px}
+h2{font-size:1.7rem;font-weight:800;margin-bottom:20px;color:var(--blue-d)}
+.lead{font-size:clamp(1.5rem,3.2vw,2.3rem);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:600;line-height:1.25;margin:0 0 20px;max-width:22em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--blue);transition:background .15s}
+.btn.pri{background:var(--blue);color:#fff}
+.btn.pri:hover{background:var(--blue-d)}
+.btn.sec{color:var(--blue)}
+.btn.sec:hover{background:var(--panel)}
+
+/* Rack: the memorable element */
+.rack{background:#0c1420;border:2px solid #2a3a50;border-radius:10px;padding:10px;display:grid;gap:6px;margin-top:8px}
+.unit{display:flex;align-items:center;gap:14px;background:linear-gradient(#1a2638,#141e2c);border:1px solid #2f4059;border-radius:5px;padding:10px 14px;color:#dbe6f4}
+.unit i{width:10px;height:10px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok);flex:none;animation:blink 2.4s infinite}
+.unit:nth-child(2n) i{animation-delay:.6s}.unit:nth-child(3n) i{animation-delay:1.3s}
+.unit b{font-weight:600;min-width:9.5em}
+.unit span{color:#93a6bf;font-size:.95rem}
+@keyframes blink{0%,86%,100%{opacity:1}92%{opacity:.35}}
+.note{color:var(--muted);font-size:.95rem;margin:10px 0 0}
+
+/* Timeline */
+.job{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:8px;padding:22px 24px;margin-bottom:18px}
+.job h3{font-size:1.2rem}
+.job .meta{color:var(--muted);margin:2px 0 12px;font-size:.98rem}
+.job ul{margin:0;padding-left:1.15em}
+.job li{margin:4px 0}
+.job.small{border-left-color:var(--line)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px 20px}
+.box h3{font-size:1.05rem;margin-bottom:8px}
+.box p,.box ul{margin:0}
+.box ul{padding-left:1.1em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.97rem}
+dl{margin:0;display:grid;grid-template-columns:7.5em 1fr;gap:10px 16px}
+dt{color:var(--muted)}dd{margin:0}
+footer{color:var(--muted);font-size:.9rem;padding-top:24px;border-top:1px solid var(--line)}
+
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center;padding:28px 20px}
+  aside img{width:96px}
+  aside nav,aside .contact{display:none}
+  main{padding-top:32px}
+  .unit b{min-width:0}.unit{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <img src="assets/photo.jpg" alt="Portrait of Leap Sothon" width="220" height="220">
+    <div>
+      <h1>Leap Sothon</h1>
+      <p class="role">IT Supervisor<br>Phnom Penh, Cambodia</p>
+    </div>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#systems">What I look after</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="contact">
+      <a href="mailto:sothon.leap@gmail.com">sothon.leap@gmail.com</a>
+      <a href="tel:+85510567078">010 567 078</a>
+    </div>
+  </aside>
+
+  <main>
+    <section id="about">
+      <p class="lead">I keep servers, networks, phone lines and in-house systems running, and I build the tools a team needs on top of them.</p>
+      <p>Since 2017 I have run IT operations for a micro-insurance company and now an import-export business in Phnom Penh. The work covers Active Directory, mail, firewalls, routers, call-centre telephony, backups and CCTV, plus company websites and internal systems written in ASP.NET, VB.NET and C# with SQL Server.</p>
+      <p>I am applying for the <strong>IT Support Senior Associate</strong> position.</p>
+      <div class="btns">
+        <a class="btn pri" href="assets/Leap_Sothon_CV.pdf" download>Download CV (PDF)</a>
+        <a class="btn sec" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="systems">
+      <h2>What I look after</h2>
+      <div class="rack" role="list">
+        <div class="unit" role="listitem"><i aria-hidden="true"></i><b>Servers</b><span>Active Directory, email, application and mobile app servers</span></div>
+        <div class="unit" role="listitem"><i aria-hidden="true"></i><b>Network and security</b><span>Firewalls, VPN, MikroTik and FortiGate routers, FortiMail</span></div>
+        <div class="unit" role="listitem"><i aria-hidden="true"></i><b>Telephony</b><span>PBX, SIP trunks and SIM box for call centres</span></div>
+        <div class="unit" role="listitem"><i aria-hidden="true"></i><b>Backup</b><span>Veritas backup of server configurations, database backup and restore</span></div>
+        <div class="unit" role="listitem"><i aria-hidden="true"></i><b>Cameras</b><span>CCTV set-up and user support</span></div>
+        <div class="unit" role="listitem"><i aria-hidden="true"></i><b>Users</b><span>PC and laptop support, call-centre staff requests</span></div>
+      </div>
+      <p class="note">Based on my roles at Livcomo (2022 to now) and Cambodia Life Micro Insurance (2017 to 2022).</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <h3>IT Supervisor, Livcomo Oversea Import Export Pte. Ltd.</h3>
+        <p class="meta">Sep 2022 to now</p>
+        <ul>
+          <li>Maintain servers: Active Directory, email, application and mobile app.</li>
+          <li>Manage firewall security and MikroTik routers (VPN, SIP trunk, hosting).</li>
+          <li>Maintain the PBX system and support the call centre.</li>
+          <li>Support staff PCs and laptops; configure security cameras.</li>
+          <li>Develop the company website and internal systems as assigned by management.</li>
+          <li>Maintain databases and back up all server configurations with Veritas.</li>
+          <li>Video production: content creation, scripting and directing.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior IT Operation, Cambodia Life Micro Insurance Plc.</h3>
+        <p class="meta">Feb 2017 to Sep 2022</p>
+        <ul>
+          <li>Maintained servers (AD, email, application, mobile app) and firewall security.</li>
+          <li>Managed FortiMail and FortiGate routers (VPN, SIP trunk, hosting).</li>
+          <li>Ran the call-centre PBX with SIP to Cellcard and a SIM box.</li>
+          <li>Supported staff PCs and laptops; configured security cameras.</li>
+          <li>Developed the company website and internal systems; maintained databases and Veritas backups.</li>
+        </ul>
+      </article>
+
+      <article class="job small">
+        <h3>Operation, DHL Logistic Cambodia</h3>
+        <p class="meta">Jul 2016 to Feb 2017</p>
+      </article>
+
+      <article class="job small">
+        <h3>IT Clerk, JIT Textiles Limited</h3>
+        <p class="meta">Jul 2015 to Jul 2016</p>
+        <ul>
+          <li>Computer maintenance, software installation and support; ERP, payroll, iris and fingerprint system support.</li>
+          <li>Built a Shop Floor System (barcode printing, daily sewing, QC, ironing and packing tracking, with daily, weekly and monthly reports).</li>
+          <li>Built a Car Booking System, a Machine Movement System, an Incentive System for payroll, and a Production Line Daily Attendance System.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="box"><h3>Programming</h3><ul class="tags"><li>C#</li><li>VB.NET</li><li>JavaScript</li><li>C++</li><li>Java</li></ul></div>
+        <div class="box"><h3>Web</h3><ul class="tags"><li>ASP.NET</li><li>HTML</li><li>XHTML</li></ul></div>
+        <div class="box"><h3>Databases and reports</h3><ul class="tags"><li>SQL Server</li><li>MySQL</li><li>MS Access</li><li>Crystal Report</li></ul></div>
+        <div class="box"><h3>Infrastructure</h3><ul class="tags"><li>Active Directory</li><li>MikroTik</li><li>FortiGate</li><li>FortiMail</li><li>PBX / SIP</li><li>Veritas</li></ul></div>
+        <div class="box"><h3>Other</h3><ul class="tags"><li>Troubleshooting</li><li>Hardware and software installation</li><li>Video production</li><li>Adobe Premiere Pro</li></ul></div>
+        <div class="box"><h3>Languages</h3><p>Khmer and English, written and spoken.</p></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education and training</h2>
+      <dl>
+        <dt>2011 to 2015</dt><dd><strong>Bachelor’s degree in IT</strong>, Royal University of Phnom Penh</dd>
+        <dt>2011 to 2015</dt><dd><strong>Bachelor’s degree in English</strong>, Cambodia International Cooperation Institute</dd>
+        <dt>2023</dt><dd>Video production: camera settings, lighting, Adobe Premiere Pro 2022</dd>
+        <dt>2011 to 2012</dt><dd>Basic Concepts of Information Technology: Word, Excel, PowerPoint, computer repair</dd>
+        <dt>2012</dt><dd>English courses at CICI: conversation, sentence skills, parts of speech for academic writing</dd>
+      </dl>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in talking about the IT Support Senior Associate role? Email or call.</p>
+      <div class="btns">
+        <a class="btn pri" href="mailto:sothon.leap@gmail.com">Email me</a>
+        <a class="btn sec" href="tel:+85510567078">Call 010 567 078</a>
+        <a class="btn sec" href="assets/Leap_Sothon_CV.pdf" download>Download CV</a>
+      </div>
+    </section>
+
+    <footer>© <span id="y">2026</span> Leap Sothon · Phnom Penh, Cambodia</footer>
+  </main>
+</div>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+// highlight current section in the sidebar
+const links=[...document.querySelectorAll('aside nav a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}
+}),{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('main section').forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
